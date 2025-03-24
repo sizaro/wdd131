@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A WDD website showing temple pictures">
+    <meta name="author" content="Saleh Ntege">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./week02/styles/filtered-temple.css">
+    <link rel="stylesheet" href="./week02//styles//filtered-large-temple.css">
+</head>
+<body>
+    
+    <header>
+        <div class="top-header">
+            <h1>Temple Album</h1>
+            <button class="hamburger-menu">&#9776;</button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+            <button class="close-menu">&#10006;</button>
+        </nav>
+    </header>
+    <main id="main-content">
+        <h2>Home</h2>
+        <div id="content-wrapper" class="content-wrapper"></div>
+    </main>
+    <footer>
+        <p class="p1">&copy;<span id="currentyear"></span>| Bamutesiza Ronald | Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="./week02//scripts//filtered-temple.js"></script>
+</body>
+</html>
+
+        

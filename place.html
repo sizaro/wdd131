@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Uganda - Bamutesiza Ronald</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./styles/country.css">
+</head>
+<body>
+    <header>
+        <h1> Uganda </h1>
+    </header>
+    <main>
+        <div class="container">
+            <section id="hero">
+                <picture>
+                    <source srcset="./images/crested-crane-large.webp" media="(min-width: 1000px)" alt="Crested-Crane" title="Crested-Crane">
+                    <source srcset="./images/crested-crane-medium.webp" media="(min-width: 500px)"  alt="Crested-Crane" title="Crested-Crane">
+                    <img src="./images/crested-crane-small.webp"  width="500" height="250"  alt="Crested-Crane" title="Crested-Crane">
+                </picture>
+            </section>
+            <section id="about">
+                <h2>Date</h2>
+                <p>Area: 587,041sq km</p>
+                <p>Population: 27,691,018</p>
+                <p>Capital: Kampala</p>
+                <p>Languages: English, Swahili, Luganda</p>
+                <p>Currency: Shillings</p>
+                <p>TimeZone: UTC+3</p>
+                <P>Calling Code: +256</P>
+                <p>Internet TLD: .Ug</p>
+            </section>
+        
+            <section class="weather">
+                <h2>Weather <span class="weather-icon"></span></h2>
+                <p>⛅</p>
+                <p>Current Temperature: 30°C</p>
+                <p>Wind Speed: 10 km/h</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+            </section>
+
+        </div>
+        </main>
+    
+        <footer>
+            <p class="p1">&copy;<span id="currentyear"></span>| Bamutesiza Ronald | Uganda</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="./scripts/country.js"></script>
+</body>
+</html>
