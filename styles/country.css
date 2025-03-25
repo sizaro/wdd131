@@ -102,7 +102,7 @@ section h2{
 footer {
     background-color: var(--accent-color);
     padding: 10px;
-    color: var(--text-color);
+    color: gray;
     text-align: center;
 }
 
