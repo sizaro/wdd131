@@ -3,20 +3,22 @@
     --secondary-color: #FFD700;
     --heading-color: #FFD700;
     --accent-color: #D90000; 
-    --text-color: #f0f0f0; 
+    --text-color: #FFFF99; 
+    --background-color:#000000;
+    --foreground-color:#E0FFFF;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
     color: var(--text-color);
     margin: 0;
 }
 
 header {
-    background-color: var(--accent-color);
+    background-color: var(--background-color);
     padding: 10px;
-    color: var(--text-color);
+    color: var(--foreground-color);
     text-align: center;
 }
 
@@ -100,9 +102,9 @@ section h2{
 }
 
 footer {
-    background-color: var(--accent-color);
+    background-color: var(--background-color);
+    color: var(--foreground-color);
     padding: 10px;
-    color: gray;
     text-align: center;
 }
 
