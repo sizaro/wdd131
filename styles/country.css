@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     background-color: var(--text-color);
     color: var(--text-color);
     margin: 0;
@@ -48,6 +48,7 @@ nav ul li a {
 
 
 section.h {
+    font-family: 'Roboto', sans-serif;
     padding: 10px; 
     text-align: center;
     width: 100%;
@@ -61,6 +62,7 @@ section.h {
 }
 
 section h2{
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -84,6 +86,12 @@ section h2{
 
 .weather-icon {
     display: inline; 
+}
+
+.weather-icon::after{
+    content: "⛅";
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 #about {
