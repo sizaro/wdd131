@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
   <meta charset="utf-8" />
   <title>Simple Weather App - Project Proposal</title>
-  <link rel="">
   <link rel="stylesheet" href="./styles/projectplanstyles.css">
 </head>
-
 <body>
   <header>
     <h1>Weather App Project Proposal</h1>
   </header>
 
   <main>
-    <!-- ------------------------Overview------------------------------ -->
     <hr />
     <h2>Overview</h2>
 
     <h3>Purpose</h3>
-    <p>The Weather App is a basic website that displays weather information for a specific city. The app provides essential weather data such as temperature and wind speed, offering users a quick way to check weather updates. The project is designed to help me practice web development skills, specifically focusing on HTML, CSS, and JavaScript.</p>
+    <p>The <span class="colored">Weather App</span> is a basic website that displays weather information for a specific city. The app provides essential weather data such as temperature and wind speed, offering users a quick way to check weather updates. The project is designed to help me practice web development skills, specifically focusing on HTML, CSS, and JavaScript.</p>
 
     <h3>Audience</h3>
     <p>The target audience for this app includes anyone looking for quick and simple weather updates for a city. The app will cater to users of all ages, from casual web users to those who need real-time weather information for travel or outdoor activities. The app will be accessible on both mobile and desktop devices, with a user-friendly interface for all types of users, including those with disabilities.</p>
@@ -28,32 +24,32 @@
     <h2>Branding</h2>
 
     <h3>Website Logo</h3>
-    <img src="images/logo.png" alt="Logo image" />
+    <div class="logo">
+      DWA
+    </div>
 
     <hr />
     <h2>Style Guide</h2>
 
-    <!-- ------------------------Color Palette------------------------------ -->
     <h3>Color Palette</h3>
     <p>For the weather app, I will use a clean and simple color palette that reflects the calm and clarity associated with weather updates. Below is the chosen color palette:</p>
 
     <table class="colors">
-        <thead>
-          <tr>
-            <th>Primary</th>
-            <th>Secondary</th>
-            <th>Accent</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="primary">#4A90E2</td>
-            <td class="secondary">#F5A623</td>
-            <td class="accent">#FFFFFF</td> 
-          </tr>
-        </tbody>
-      </table>
-      
+      <thead>
+        <tr>
+          <th>Primary</th>
+          <th>Secondary</th>
+          <th>Accent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="primary">#A9DFBF</td>
+          <td class="secondary">#90EE90</td>
+          <td class="accent">#4B6E4F</td>
+        </tr>
+      </tbody>
+    </table>
 
     <hr />
     <h3>Typography</h3>
@@ -61,14 +57,8 @@
     <h4>Paragraph Font: Helvetica, sans-serif</h4>
 
     <h3>Normal Paragraph Example</h3>
-    <p>
-      The Simple Weather App offers quick and essential weather information at your fingertips. Whether you're planning an outdoor adventure or checking the weather for the day, this app provides you with all the information you need to plan ahead.
-    </p>
-
-    <h3>Colored Paragraph Example</h3>
-    <p class="colored">
-      The app displays weather details like temperature, wind speed, and more, all in real-time. Our goal is to provide you with a user-friendly and interactive experience.
-    </p>
+    <p>The <span class="colored">Simple Weather App</span> offers quick and essential weather information at your fingertips. Whether you're planning an outdoor adventure or checking the weather for the day, this app provides you with all the information you need to plan ahead.</p>
+    <p>The app displays weather details like temperature, wind speed, and more, all in real-time. Our goal is to provide you with a <span class="colored">user-friendly</span> and interactive experience.</p>
 
     <hr />
     <h2>Navigation</h2>
@@ -79,7 +69,6 @@
     </nav>
     <hr />
 
-    <!-- ------------------------Site Structure------------------------------ -->
     <h2>Site Map</h2>
     <div class="sitemap">
       <div class="sm-home">Home - Displays weather information</div>
@@ -91,24 +80,44 @@
     <h2>Wireframes</h2>
 
     <h3>Home</h3>
-    <img src="images/home-wireframe.png" alt="Home Page Wireframe" />
+    <div class="wireframe-images">
+      <div class="image-container-mobile">
+        <img src="images/weather mobile home page.PNG" class="mobile" alt="Home Page Wireframe Mobile">
+      </div>
+      <div class="image-container-desktop">
+        <img src="images/weather large page.PNG" class="desktop" alt="Home Page Wireframe Desktop">
+      </div>
+    </div>
     <p>The Home page will display the current weather information, such as temperature, wind speed, and other key details for a specific city.</p>
 
     <h3>About</h3>
-    <img src="images/about-wireframe.png" alt="About Page Wireframe" />
+    <div class="wireframe-images">
+      <div class="image-container-mobile">
+        <img src="images/weather about mobile page.PNG" class="mobile" alt="About Page Wireframe Mobile">
+      </div>
+      <div class="image-container-desktop">
+        <img src="images/weather about large page.PNG" class="desktop" alt="About Page Wireframe Desktop">
+      </div>
+    </div>
     <p>The About page will describe the purpose of the weather app, how it works, and the technologies used to build it.</p>
 
     <h3>Contact</h3>
-    <img src="images/contact-wireframe.png" alt="Contact Page Wireframe" />
+    <div class="wireframe-images">
+      <div class="image-container-mobile">
+        <img src="images/weather contact mobile page.PNG" class="mobile" alt="Contact Page Wireframe Mobile">
+      </div>
+      <div class="image-container-desktop">
+        <img src="images/weather contact large page.PNG" class="desktop" alt="Contact Page Wireframe Desktop">
+      </div>
+    </div>
     <p>The Contact page will contain a feedback form for users to submit inquiries or suggestions for the app.</p>
   </main>
 
-
   <footer>
-    <p class="p1">&copy;<span id="currentyear"></span>| Bamutesiza Ronald | Uganda</p>
+    <p class="p1">&copy;<span id="currentyear"></span> | Bamutesiza Ronald | Uganda</p>
     <p id="lastModified"></p>
-</footer>
-<script src="./scripts/getdates.js"></script>
-</body>
+  </footer>
 
+  <script src="./scripts/getdates.js"></script>
+</body>
 </html>
