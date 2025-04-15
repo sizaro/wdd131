@@ -115,6 +115,20 @@ table.colors .accent {
   color: #333;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+  text-indent: -1em; 
+}
+
+
+
 /* ---------------------- Site Map ---------------------- */
 .sitemap {
   margin-top: 30px;
