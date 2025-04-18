@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact WeatherNow - a weather application by Bamutesiza Ronald. Send us your questions, feedback, or inquiries about weather updates in Uganda." />
+    <meta name="author" content="Bamutesiza Ronald" />
+    <title>WeatherNow | Contact</title>
+    <link rel="stylesheet" href="./styles/finalproject.css" />
+  </head>
+<body>
+  <header>
+    <div class="top-header">
+      <h1>WeatherNow</h1>
+      <button class="hamburger-menu">&#9776;</button>
+  </div>
+    <nav>
+      <ul>
+          <li>
+            <a href="index.html" class="home-page">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="contact-page">Contact</a>
+          </li>
+      </ul>
+      <button class="close-menu">&#10006;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="weatherform-wrapper">
+      <h2>Contact Us</h2>
+      <div class="weatherform-container">
+        <form id="contact-form" action="success.html" method="get">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="p1">&copy;<span id="currentyear"></span> | Bamutesiza Ronald | Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="./scripts/contact.js" defer></script>
+</body>
+</html>
