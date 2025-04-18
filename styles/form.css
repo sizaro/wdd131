@@ -1,0 +1,162 @@
+@import url("https://coolors.co/ddd7dd-f8f7f8-625655-3d1c3a-b2abaf");
+
+:root {
+    --color-primary:#F8F7F8; ;
+    --color-secondary: #625655;
+    --color-accent: #B2ABAF;
+    --bgcolor-header-footer:#3D1C3A;
+    --color-bg-dark: #DDD7DD;
+    --color-text: #3D1C3A;     
+    --color-text-light: #F8F7F8;
+}
+
+/* Mobile-first styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-primary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor-header-footer);
+    width: 100%;
+    max-width: 750px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: var(--color-text-light);
+    ;
+}
+form {
+    display: block;
+    background: var(--color-accent);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 8rem;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--color-bg-dark);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 10px 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating input:hover ~ label {
+    color: var(--color-text);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.features input {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-accent);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-text-light);
+    width: 100%;
+    background-color: var(--bgcolor-header-footer);
+}
+
+/* Tablet styles */
+@media (min-width: 600px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+    body {
+        padding: 40px;
+    }
+
+    form {
+        max-width: 700px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}

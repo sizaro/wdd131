@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about the WeatherNow app, its purpose, and technology used." />
+  <title>WeatherNow | About</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>WeatherNow</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About This App</h2>
+      <p><strong>WeatherNow</strong> is a simple web app that helps users check current weather conditions, including temperature and wind speed, in any city worldwide.</p>
+      <p>It is built using modern web technologies such as:</p>
+      <ul>
+        <li>HTML5 for structure</li>
+        <li>CSS3 with responsive design</li>
+        <li>JavaScript (ES6+) for interactivity and API access</li>
+        <li>OpenWeatherMap API for real-time weather data</li>
+        <li>LocalStorage for search history</li>
+      </ul>
+      <p>This app demonstrates how clean design and core front-end technologies can be combined to build functional, user-friendly applications.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Bamutesiza Ronald | Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+  </script>
+</body>
+</html>
