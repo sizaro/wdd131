@@ -17,7 +17,7 @@
   
   body {
     width: 100%;
-    font-family: var(--font-family);
+    font-family:'Roboto', sans-serif;;
     background-color: var(--secondary-color);
     color: var(--accent-color);
     line-height: 1.6;
@@ -39,6 +39,11 @@
   h2{
     color: var(--bg-color);
   }
+
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
   
   nav {
     margin-top: 0.5rem;
@@ -49,6 +54,7 @@
     margin: 0 0.5rem;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
   }
   
   nav a:hover {
